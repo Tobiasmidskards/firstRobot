@@ -7,7 +7,7 @@ GPIO.setup(11,GPIO.OUT)
 GPIO.setup(13,GPIO.OUT)
 GPIO.setup(15,GPIO.OUT)
 
-for x in range (0,2)
+for x in range (0,1)
 	print "Turning left"
 	GPIO.output(7,True)
 	GPIO.output(13,True)
@@ -16,7 +16,7 @@ for x in range (0,2)
 	GPIO.output(13,False)
 	print "Left turn complete"
 	
-for x in range (0,2)
+for x in range (0,1)
 	print "Turning right"
 	GPIO.output(11,True)
 	GPIO.output(15,True)
@@ -25,4 +25,6 @@ for x in range (0,2)
 	GPIO.output(15,False)
 	print "Right turn complete"
 	
-b
+GPIO.cleanup()
+
+print "Test is complete."
