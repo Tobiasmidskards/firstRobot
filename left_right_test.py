@@ -29,4 +29,4 @@ for x in range (0,1):
 	
 GPIO.cleanup()
 
-print "Test is completeeee."
+print "Test is complete."
