@@ -15,9 +15,9 @@ def ost():
 
 skrivet = input ("Skriv et tal: ")
 
-for x in range (0,10):
-  print x+1
+for x in range (0,1):
   if input == 1:
+    print x+1
     ost()
   else:
     print "skriv 1"
