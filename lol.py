@@ -11,7 +11,7 @@ def ost():
   GPIO.output(7,True)
   time.sleep(1)
   GPIO.output(7,False)
-  time.sleep
+  time.sleep(1)
 
 for x in range (0,10):
   ost()
