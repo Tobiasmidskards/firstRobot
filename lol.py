@@ -13,7 +13,7 @@ def ost():
   GPIO.output(7,False)
   time.sleep(1)
 
-skrivet = input ("\nVælg et tal: ")
+skrivet = input ("Vælg et tal: ")
 
 for x in range (0,10):
   print x+1
