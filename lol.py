@@ -17,7 +17,7 @@ skrivet = input ("Skriv et tal: ")
 
 for x in range (0,10):
   print x+1
-  if input = 1:
+  if input == 1:
     ost()
   else:
     print "skriv 1"
