@@ -15,7 +15,7 @@ def ost():
 
 for x in range (0,10):
   ost()
-  print "test" x
+  print x
 GPIO.cleanup()
 
 print "Test is complete."
