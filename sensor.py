@@ -31,3 +31,7 @@ def distance(measure='cm'):
 		return distance
 
 print(distance('cm'))
+
+for x in range (0,20):
+	time.sleep(0.1)
+	print(distance('cm'))
