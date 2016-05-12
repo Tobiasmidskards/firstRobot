@@ -11,29 +11,32 @@ GPIO.setup(15,GPIO.OUT)
 y=10
 
 def blink():
+  print "Running function blink()"
   for x in range (0,y):
     GPIO.output(7,True)
     print "I am blinking -",x,"out of",y
     time.sleep(.5)
     GPIO.output(7,False)
     time.sleep(.5)
-  print "I am OFF"
+  print "I am DONE"
   
 def onforten():
+  print "Running function onforten()"
   GPIO.output(7,True)
   print "I am on for 4 seconds"
   time.sleep(4)
   GPIO.output(7,False)
-  print "I am OFF"
+  print "I am DONE"
   
 def random():
+  print "Running function random()"
   for x in range (rints(0,10)):
     GPIO.output(7,True)
     print "I am blinking -",x,"out of",y
     time.sleep(0.5)
     GPIO.output(7,False)
     time.sleep(0.5)
-  print "I am OFF"
+  print "I am DONE"
 
 blink()
 random()
