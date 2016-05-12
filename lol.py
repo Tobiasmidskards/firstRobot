@@ -41,7 +41,7 @@ def random():
 def name():
   name = "Tobias";
   c = len(name)
-  for x in range (0,c):
+  for x in range (0,(c+1)):
     url = name[:-c]
     print url
     c=c-1
