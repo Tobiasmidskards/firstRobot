@@ -29,6 +29,7 @@ def onforten():
 def random():
   for x in range (0,10):
     GPIO.output(7,True)
+    print rint
     print "I am blinking -",x,"out of",y
     time.sleep(rint(0,3))
     GPIO.output(7,False)
