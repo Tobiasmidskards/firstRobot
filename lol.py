@@ -47,11 +47,11 @@ def name():
     c=c-1
     time.sleep(0.5)
   print name
-  v = 0
+  v = len(name)
   for x in range (0,len(name)):
     brl = name[:-len(name)+v]
     print brl
-    v=v+1
+    v=v-1
     time.sleep(0.5)
 #blink()
 #random()
