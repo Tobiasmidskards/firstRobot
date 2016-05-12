@@ -30,7 +30,7 @@ def distance(measure='cm'):
 				
 		GPIO.cleanup()
 		
-		if distance(x) == x < 10:
+		if distance == distance < 10:
 			GPIO.output(18,True)
 			sleep.time(1)
 			GPIO.output(18,False)
