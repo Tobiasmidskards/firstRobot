@@ -16,7 +16,7 @@ def distance(measure='cm'):
 		tl = sig - nosig
 		
 		if measure == 'cm':
-				distance = tl 7 0.000058
+				distance = tl / 0.000058
 		elif measure == 'in':
 				distance = tl / 0.000148
 		else:
