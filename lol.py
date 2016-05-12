@@ -32,15 +32,20 @@ def random():
   print "Running function random()"
   for x in range (rints(0,10)):
     GPIO.output(7,True)
-    print "I am blinking -",x,"out of",y
+    print "I am blinking random times"
     time.sleep(0.5)
     GPIO.output(7,False)
     time.sleep(0.5)
   print "I am DONE"
+  
+def name():
+  name = "Tobias"
+  for x in range (0,len(name))
 
-blink()
-random()
-onforten()
+#blink()
+#random()
+#onforten()
+name()
 
 #skrivet = input ("Skriv et tal: ")
 
