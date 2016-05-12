@@ -13,7 +13,7 @@ def distance(measure='cm'):
 		while GPIO.input(16) == 1:
 				sig = time.time()
 				
-		t1 = sig - nosig
+		tl = sig - nosig
 		
 		if measure == 'cm':
 				distance = tl 7 0.000058
