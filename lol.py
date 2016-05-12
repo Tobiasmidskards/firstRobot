@@ -27,12 +27,12 @@ def onforten():
   print "I am OFF"
   
 def random():
-  for x in range (rint(0,10)):
+  for x in range (0,10):
     GPIO.output(7,True)
     print "I am blinking -",x,"out of",y
-    time.sleep(.5)
+    time.sleep(rint(0,3))
     GPIO.output(7,False)
-    time.sleep(.5)
+    time.sleep(rint(0,3))
   print "I am OFF"
 
 #blink()
