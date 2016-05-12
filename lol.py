@@ -39,6 +39,7 @@ def random():
   print "I am DONE"
   
 def name():
+ for x in range (0,3) 
   name = "Tobias";
   c = len(name)
   for x in range (0,len(name)):
