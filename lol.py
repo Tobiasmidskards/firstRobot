@@ -39,8 +39,9 @@ def random():
   print "I am DONE"
   
 def name():
-  name = "Tobias"
-  for x in range (0,len(name))
+  name = "Tobias";
+  for x in range (0,len(name)):
+    print lol
 
 #blink()
 #random()
