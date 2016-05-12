@@ -32,9 +32,10 @@ def distance(measure='cm'):
 				distance = None
 		
 		if distance == distance < 10:
-			GPIO.output(18,True)
-			time.sleep(1)
-			GPIO.output(18,False)
+			while distance < 10:
+				GPIO.output(18,True)
+				time.sleep(1)
+				GPIO.output(18,False)
 		else:
 			GPIO.output(18,False)
 				
