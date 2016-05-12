@@ -3,6 +3,7 @@ import time
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(18, GPIO.OUT)
+GPIO.setup(7, GPIO.OUT)
 
 def distance(measure='cm'):
 		GPIO.setmode(GPIO.BOARD)
@@ -33,10 +34,12 @@ def distance(measure='cm'):
 		
 		if distance == distance < 10:
 			GPIO.output(18,True)
+			GPIO.output(7,True)
 			time.sleep(0.1)
 			GPIO.output(18,False)
 		else:
 			GPIO.output(18,False)
+			GPIO.output(7,False)
 				
 		GPIO.cleanup()
 		
