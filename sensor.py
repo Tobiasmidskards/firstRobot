@@ -5,6 +5,7 @@ def distance(measure='cm'):
 		GPIO.setmode(GPIO.BOARD)
 		GPIO.setup(12,GPIO.OUT)
 		GPIO.setup(16, GPIO.IN)
+		GPIO.setup(18, GPIO.OUT)
 		
 		time.sleep(0.3)
 		GPIO.output(12,True)
@@ -28,6 +29,14 @@ def distance(measure='cm'):
 				distance = None
 				
 		GPIO.cleanup()
+		
+		if distance(x) == x < 10:
+			GPIO.output(18,True)
+			sleep.time(1)
+			GPIO.output(18,False)
+		else:
+			None
+		
 		return distance
 
 print(distance('cm'))
