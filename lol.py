@@ -42,8 +42,8 @@ def name():
   name = "Tobias";
   c = len(name)
   for x in range (0,(c+1)):
-    url = name[:-c]
     print url
+    url = name[:-c]
     c=c-1
     time.sleep(0.5)
 #blink()
