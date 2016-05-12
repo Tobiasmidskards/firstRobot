@@ -41,12 +41,18 @@ def random():
 def name():
   name = "Tobias";
   c = len(name)
-  for x in range (0,c):
+  for x in range (0,name):
     url = name[:-c]
     print url
     c=c-1
     time.sleep(0.5)
   print name
+  v = 0
+  for x in range (0,name):
+    brl = name[:-name+v]
+    print brl
+    v=v+1
+    time.sleep(0.5)
 #blink()
 #random()
 #onforten()
