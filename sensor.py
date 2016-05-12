@@ -31,11 +31,10 @@ def distance(measure='cm'):
 				print ('improper choise of measurement: in og cm')
 				distance = None
 		
-		
-		while distance < 10:
-				GPIO.output(18,True)
-				time.sleep(1)
-				GPIO.output(18,False)
+		if distance == distance < 10:
+			GPIO.output(18,True)
+			sleep.time(0.1)
+			GPIO.output(18,False)
 		else:
 			GPIO.output(18,False)
 				
