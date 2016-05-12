@@ -6,6 +6,10 @@ def distance(measure='cm'):
 		GPIO.setup(12,GPIO.OUT)
 		GPIO.setup(16, GPIO.IN)
 		
+		time.sleep(0.3)
+		GPIO.output(12,True)
+		time.sleep(0.00001)
+		
 		GPIO.output(12, False)
 		while GPIO.input(16) == 0:
 				nosig = time.time()
