@@ -49,7 +49,7 @@ def name():
   print name
   v = 0
   for x in range (0,len(name)):
-    brl = name[:-name+v]
+    brl = name[:-len(name)+v]
     print brl
     v=v+1
     time.sleep(0.5)
