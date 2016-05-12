@@ -9,6 +9,7 @@ GPIO.setup(15,GPIO.OUT)
 
 def ost():
   GPIO.output(7,True)
+  print "lol"
   time.sleep(1)
   GPIO.output(7,False)
   time.sleep(1)
