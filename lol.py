@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-from random import randint as rint
+from random import randint as rints
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(7,GPIO.OUT)
@@ -27,13 +27,12 @@ def onforten():
   print "I am OFF"
   
 def random():
-  for x in range (0,10):
+  for x in range (rints(0,10)):
     GPIO.output(7,True)
-    print rint
     print "I am blinking -",x,"out of",y
-    time.sleep(rint(0,3))
+    time.sleep(0.5)
     GPIO.output(7,False)
-    time.sleep(rint(0,3))
+    time.sleep(0.5)
   print "I am OFF"
 
 #blink()
