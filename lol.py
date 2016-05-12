@@ -35,9 +35,9 @@ def random():
     time.sleep(.5)
   print "I am OFF"
 
-blink()
+#blink()
 random()
-onforten()
+#onforten()
 #skrivet = input ("Skriv et tal: ")
 
 #for x in range (0,1):
