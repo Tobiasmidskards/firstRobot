@@ -46,14 +46,14 @@ def name():
     url = name[:-c]
     print url
     c=c-1
-    time.sleep(0.5)
+    time.sleep(0.2)
   print name
   v = len(name)
   for x in range (0,len(name)):
     brl = name[:-len(name)+v]
     print brl
     v=v-1
-    time.sleep(0.5)
+    time.sleep(0.2)
 #blink()
 #random()
 #onforten()
