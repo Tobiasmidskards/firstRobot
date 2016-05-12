@@ -41,7 +41,7 @@ def random():
 def name():
   name = "Tobias";
   for x in range (0,len(name)):
-    print lol
+    print "lol"
 
 #blink()
 #random()
