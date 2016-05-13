@@ -102,7 +102,6 @@ def main():
 		GPIO.setup(12,GPIO.OUT)  # DISTANCE TRIGGER
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
-		distance = 0
 		distance('cm')
 		
 		if distance == distance < 15:
