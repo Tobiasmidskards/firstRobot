@@ -103,6 +103,7 @@ def main():
 		distance()
 		
 		if distance() < 15:
+			forwardoff()
 			led()
 			back()
 			rints(0,2)
@@ -112,8 +113,6 @@ def main():
 				right()
 		else:
 			forwardon()
-			distance()
-			forwardoff()
 			
 		GPIO.cleanup()
 
