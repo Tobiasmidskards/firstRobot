@@ -85,8 +85,6 @@ def distance(measure='cm'):
 				print ('improper choise of measurement: in og cm')
 				distance = None
 				
-		global dist
-		dist = distance
 		return distance
 		
 		
@@ -104,7 +102,7 @@ def main():
 		GPIO.setup(12,GPIO.OUT)  # DISTANCE TRIGGER
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
-		if dist == dist > 15:
+		if distance == distance > 15:
 			forward()
 		else:
 			blink()
@@ -119,6 +117,6 @@ def main():
 
 print(distance('cm'))
 
-def power():
-	for x in range (0,20):
-		main()
+for x in range (0,20):
+	main()
+	time.sleep(0.1)
