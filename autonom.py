@@ -85,8 +85,11 @@ def distance(measure='cm'):
 				print ('improper choise of measurement: in og cm')
 				distance = None
 				
+		global dist
+		dist = distance
 		return distance
-	dist = distance
+		
+		
 
 def main():
 	# autonom main function
