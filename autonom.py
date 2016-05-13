@@ -107,7 +107,7 @@ def main():
 			led()
 			back()
 			rints(0,2)
-			if rints == 0:
+			if rints == 1:
 				left()
 			else:
 				right()
