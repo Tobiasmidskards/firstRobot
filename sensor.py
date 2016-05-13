@@ -50,5 +50,5 @@ def distance(measure='cm'):
 print(distance('cm'))
 
 for x in range (0,20):
-	time.sleep(0.1)
+	time.sleep(0.00001)
 	print(distance('cm'))
