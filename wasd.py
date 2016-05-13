@@ -5,9 +5,9 @@ import time
 
 
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM) 
-GPIO.setup(5, GPIO.OUT) 
-GPIO.setup(6, GPIO.OUT) 
+GPIO.setmode(GPIO.BOARD) 
+GPIO.setup(7, GPIO.OUT) 
+GPIO.setup(11, GPIO.OUT) 
 GPIO.setup(13, GPIO.OUT) 
 GPIO.setup(19, GPIO.OUT)
 
