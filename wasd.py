@@ -89,6 +89,8 @@ while True:
 		right() 
 	if(char == "k"): 
 		stahp() 
+	if(char == "b"): 
+		led()
 	time.sleep(.02) 
 
 print "cleanup"
