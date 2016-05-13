@@ -133,6 +133,5 @@ def main():
 print(distance('cm'))
 
 def power():
-	on = True
-	while on == True:
+	for x in range (0,20):
 		main()
