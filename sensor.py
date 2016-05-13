@@ -51,4 +51,4 @@ print(distance('cm'))
 
 for x in range (0,20):
 	time.sleep(0.01)
-	print("The distance is:",  distance('cm'), " cm.")
+	print(distance('cm'))
