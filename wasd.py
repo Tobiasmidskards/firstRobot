@@ -87,7 +87,7 @@ while True:
 	if(char == "a"): 
 		left() 
 	if(char == "s"): 
-		backward() 
+		back() 
 	if(char == "d"): 
 		right() 
 	if(char == "k"): 
