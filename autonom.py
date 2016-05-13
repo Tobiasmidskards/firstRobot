@@ -84,8 +84,9 @@ def distance(measure='cm'):
 		else:
 				print ('improper choise of measurement: in og cm')
 				distance = None
-		Global = distance
+				
 		return distance
+	dist = distance
 
 def main():
 	# autonom main function
@@ -100,7 +101,7 @@ def main():
 		GPIO.setup(12,GPIO.OUT)  # DISTANCE TRIGGER
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
-		if distance == distance > 15:
+		if dist == dist > 15:
 			forward()
 		else:
 			blink()
