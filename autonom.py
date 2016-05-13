@@ -52,7 +52,7 @@ def back():
 def led():
 	# Led blink
 	print "Led blink 3 times"
-	for b in range (0,3)
+	for b in range (0,3):
 		GPIO.output(18,True)
 		time.sleep(0.5)
 		GPIO.output(18,False)
