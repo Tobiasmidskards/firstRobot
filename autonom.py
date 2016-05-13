@@ -101,7 +101,7 @@ def main():
 		
 		distance()
 		
-		print distance
+		print distance()
 		
 		if distance() < 15:
 			forwardoff()
