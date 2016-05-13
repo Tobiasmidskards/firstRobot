@@ -104,7 +104,7 @@ def main():
 		
 		distance('cm')
 		
-		if distance == distance < 15:
+		if distance == distance < 15.0:
 			blink()
 			back()
 			rints(0,2)
