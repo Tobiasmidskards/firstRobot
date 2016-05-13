@@ -119,6 +119,6 @@ def main():
 
 print(distance('cm'))
 
-for x in range (0,20):
+for x in range (0,3):
 	main()
 	time.sleep(0.1)
