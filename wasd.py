@@ -53,9 +53,9 @@ def led():
 	print "Led blink 3 times"
 	for b in range (0,3):
 		GPIO.output(18,True)
-		time.sleep(0.5)
+		time.sleep(0.25)
 		GPIO.output(18,False)
-		time.sleep(0.5)
+		time.sleep(0.25)
 def getch(): 
 	fd = sys.stdin.fileno() 
 	old_settings = termios.tcgetattr(fd) 
