@@ -77,14 +77,10 @@ def distance(measure='cm'):
 				
 		tl = sig - nosig
 		
-		if measure == 'cm':
-				distance = tl / 0.000058
-		elif measure == 'in':
-				distance = tl / 0.000148
-		else:
-				print ('improper choise of measurement: in og cm')
-				distance = None
+		distance = tl / 0.000058
 				
+		GPIO.cleanup()
+		
 		return distance
 		
 		
@@ -115,10 +111,11 @@ def main():
 		else:
 			forward()
 			print(distance('cm'))
+			
 		GPIO.cleanup()
 
 
-print(distance('cm'))
+print(distance)
 
 for x in range (0,3):
 	main()
