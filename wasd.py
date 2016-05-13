@@ -1,4 +1,4 @@
-import pygame, sys 
+import pygame, sys, termios
 from pygame.locals import *
 import RPi.GPIO as GPIO
 import time
@@ -71,7 +71,7 @@ def getch():
 	old_settings = termios.tcgetattr(fd) 
 	try: 
 		tty.setraw(sys.stdin.fileno()) 
-	ch = sys.stdin.read(1) 
+		ch = sys.stdin.read(1) 
 	finally: 
 		termios.tcsetattr(fd, termios.TCSADRAIN, old_settings) 
 	return ch
