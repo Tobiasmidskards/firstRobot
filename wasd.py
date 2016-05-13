@@ -71,7 +71,9 @@ print("Use WASD to drive")
 time.sleep(.5) 
 print("'K' Will stop the drive motors") 
 
-while True: 
+def on():
+	
+   while True: 
 	GPIO.setmode(GPIO.BOARD) 
 	GPIO.setup(7, GPIO.OUT) 
 	GPIO.setup(11, GPIO.OUT) 
@@ -92,6 +94,10 @@ while True:
 	if(char == "b"): 
 		led()
 	time.sleep(.02) 
+
+f = on()
+f.daemon = True
+f.start()
 
 print "cleanup"
 GPIO.cleanup()
