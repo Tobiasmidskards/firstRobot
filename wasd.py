@@ -18,25 +18,23 @@ def forward():
 	GPIO.output(15,True)
 	
 
-def left():
+def right():
 	# Turn left
 	print "Turning left"
 	GPIO.output(7,True)
 	GPIO.output(15,True)
-	time.sleep(.8)
-	GPIO.output(7,False)
-	GPIO.output(15,False)
+	
 
-def right():
+def left():
 	# Turn right
 	print "Turning right"
 	GPIO.output(13,True)
 	GPIO.output(11,True)
-	time.sleep(.8)
-	GPIO.output(13,False)
-	GPIO.output(11,False)
+
 
 def stahp():
+	# Stop
+	print "Stopping all motors"
 	GPIO.output(13,False)
 	GPIO.output(11,False)
 	GPIO.output(15,False)
@@ -47,9 +45,7 @@ def back():
 	print "Going backwards"
 	GPIO.output(7,True)
 	GPIO.output(13,True)
-	time.sleep(1)
-	GPIO.output(7,False)
-	GPIO.output(13,False)
+
 
 def led():
 	# Led blink
