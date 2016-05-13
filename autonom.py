@@ -16,14 +16,14 @@ GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 def forwardon():
 	# Go forward
 	print "Going forward"
-	GPIO.output(7,True)
-	GPIO.output(13,True)
+	GPIO.output(11,True)
+	GPIO.output(15,True)
 	
 def forwardoff():
 	# Go forward
 	print "Going forward is off"
-	GPIO.output(7,False)
-	GPIO.output(13,False)
+	GPIO.output(11,False)
+	GPIO.output(15,False)
 
 def left():
 	# Turn left
@@ -46,11 +46,11 @@ def right():
 def back():
 	# Go backwards
 	print "Going backwards"
-	GPIO.output(11,True)
-	GPIO.output(15,True)
+	GPIO.output(7,True)
+	GPIO.output(13,True)
 	time.sleep(2)
-	GPIO.output(11,False)
-	GPIO.output(15,False)
+	GPIO.output(7,False)
+	GPIO.output(13,False)
 
 def led():
 	# Led blink
