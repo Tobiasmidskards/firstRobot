@@ -63,11 +63,6 @@ def led():
 	# Led off
 
 def distance(measure='cm'):
-		GPIO.setmode(GPIO.BOARD)
-		GPIO.setup(12,GPIO.OUT)
-		GPIO.setup(16, GPIO.IN)
-		GPIO.setup(18, GPIO.OUT)
-		GPIO.setup(7, GPIO.OUT)
 		
 		time.sleep(0.3)
 		GPIO.output(12,True)
@@ -90,17 +85,6 @@ def distance(measure='cm'):
 				print ('improper choise of measurement: in og cm')
 				distance = None
 		
-		if distance == distance < 10:
-			GPIO.output(18,True)
-			GPIO.output(7,True)
-			time.sleep(0.1)
-			GPIO.output(18,False)
-			GPIO.output(7,False)
-		else:
-			GPIO.output(18,False)
-			GPIO.output(7,False)
-				
-		GPIO.cleanup()
 		
 		return distance
 
