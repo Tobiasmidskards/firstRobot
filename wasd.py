@@ -11,13 +11,6 @@ GPIO.setup(11, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT) 
 GPIO.setup(19, GPIO.OUT)
 
-
-def turnleft(): 
-	GPIO.output(13, GPIO.LOW) 
-	GPIO.output(19, GPIO.HIGH) 
-	GPIO.output(5, GPIO.LOW) 
-	GPIO.output(6, GPIO.HIGH)
-
 def forward():
 	# Go forward
 	print "Going forward"
@@ -84,6 +77,12 @@ print("'K' Will stop the drive motors")
 x=True
 
 while x == True: 
+	GPIO.setmode(GPIO.BOARD) 
+	GPIO.setup(7, GPIO.OUT) 
+	GPIO.setup(11, GPIO.OUT) 
+	GPIO.setup(13, GPIO.OUT) 
+	GPIO.setup(19, GPIO.OUT)
+	
 	char = getch() 
 	if(char == "w"): 
 		forward() 
