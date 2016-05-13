@@ -106,8 +106,8 @@ def main():
 			forwardoff()
 			led()
 			back()
-			rints(0,2)
-			if rints == 1:
+			r = rints(0,2)
+			if r == 1:
 				left()
 			else:
 				right()
