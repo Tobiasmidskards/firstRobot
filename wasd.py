@@ -18,8 +18,6 @@ def turnleft():
 	GPIO.output(5, GPIO.LOW) 
 	GPIO.output(6, GPIO.HIGH)
 
-def forward(): 
-
 def forward():
 	# Go forward
 	print "Going forward"
