@@ -98,7 +98,7 @@ def main():
 		GPIO.setup(12,GPIO.OUT)  # DISTANCE TRIGGER
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
-		distance('cm')
+		distance()
 		
 		if distance == distance < 15.0:
 			blink()
