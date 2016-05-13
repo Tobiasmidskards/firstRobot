@@ -74,9 +74,7 @@ print("Use WASD to drive")
 time.sleep(.5) 
 print("'K' Will stop the drive motors") 
 
-x=True
-
-while x == True: 
+while True: 
 	GPIO.setmode(GPIO.BOARD) 
 	GPIO.setup(7, GPIO.OUT) 
 	GPIO.setup(11, GPIO.OUT) 
