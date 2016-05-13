@@ -84,8 +84,7 @@ def distance(measure='cm'):
 		else:
 				print ('improper choise of measurement: in og cm')
 				distance = None
-		
-		
+		Global = distance
 		return distance
 
 def main():
