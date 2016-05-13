@@ -97,6 +97,7 @@ while True:
 		stahp() 
 	time.sleep(.02) 
 
+print "cleanup"
 GPIO.cleanup()
 
 
