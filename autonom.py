@@ -102,9 +102,7 @@ def main():
 		GPIO.setup(12,GPIO.OUT)  # DISTANCE TRIGGER
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
-		if distance == distance > 15:
-			forward()
-		else:
+		if distance == distance < 15:
 			blink()
 			back()
 			rints(0,2)
@@ -112,6 +110,8 @@ def main():
 				left()
 			else:
 				right()
+		else:
+			forward()
 		GPIO.cleanup()
 
 
