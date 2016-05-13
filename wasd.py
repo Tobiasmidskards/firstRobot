@@ -95,12 +95,6 @@ def on():
 		led()
 	time.sleep(.02) 
 
-f = on()
-f.daemon = True
-f.start()
-
-while True:
-	time.sleep(1)	
 
 print "cleanup"
 GPIO.cleanup()
