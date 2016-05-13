@@ -37,6 +37,7 @@ def distance(measure='cm'):
 			GPIO.output(7,True)
 			time.sleep(0.1)
 			GPIO.output(18,False)
+			GPIO.output(7,False)
 		else:
 			GPIO.output(18,False)
 			GPIO.output(7,False)
