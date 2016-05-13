@@ -13,12 +13,15 @@ GPIO.setup(15,GPIO.OUT)  # MOTOR 4-15
 GPIO.setup(12,GPIO.OUT)  # DISTANCE TRIGGER
 GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 
-def forward():
+def forwardon():
 	# Go forward
 	print "Going forward"
 	GPIO.output(7,True)
 	GPIO.output(13,True)
-	time.sleep(1)
+	
+def forwardoff():
+	# Go forward
+	print "Going forward is off"
 	GPIO.output(7,False)
 	GPIO.output(13,False)
 
@@ -98,7 +101,6 @@ def main():
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
 		distance()
-		led()
 		
 		if distance() < 15:
 			led()
@@ -109,7 +111,9 @@ def main():
 			else:
 				right()
 		else:
-			forward()
+			forwardon()
+			distance()
+			forwardoff()
 			
 		GPIO.cleanup()
 
@@ -118,4 +122,3 @@ print(distance)
 
 for x in range (0,3):
 	main()
-	time.sleep(0.1)
