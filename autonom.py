@@ -2,8 +2,6 @@ import RPi.GPIO as GPIO
 import time
 from random import randint as rints
 
-on = True
-
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(18, GPIO.OUT) # LED
 
@@ -108,8 +106,6 @@ def distance(measure='cm'):
 
 def main():
 	# autonom main function
-	on = True
-	while on == True:
 		GPIO.setmode(GPIO.BOARD)
 		GPIO.setup(18, GPIO.OUT) # LED
 
@@ -136,3 +132,7 @@ def main():
 
 print(distance('cm'))
 
+def power():
+	on = True
+	while on == True:
+		main()
