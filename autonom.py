@@ -85,7 +85,6 @@ def distance(measure='cm'):
 				print ('improper choise of measurement: in og cm')
 				distance = None
 				
-		GPIO.cleanup()
 		return distance
 		
 		
