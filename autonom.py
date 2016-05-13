@@ -107,7 +107,7 @@ def distance(measure='cm'):
 def main():
 	# autonom main function
 	on = True
-	while on = True:
+	while on == True:
 		GPIO.setmode(GPIO.BOARD)
 		GPIO.setup(18, GPIO.OUT) # LED
 
