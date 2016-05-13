@@ -98,10 +98,10 @@ def main():
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
 		distance()
-		blink()
+		led()
 		
 		if distance == distance < 15.0:
-			blink()
+			led()
 			back()
 			rints(0,2)
 			if rints == 0:
