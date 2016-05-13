@@ -98,6 +98,7 @@ def main():
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
 		distance()
+		blink()
 		
 		if distance == distance < 15.0:
 			blink()
