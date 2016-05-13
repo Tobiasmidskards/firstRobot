@@ -110,7 +110,7 @@ def main():
 				right()
 		else:
 			forward()
-			print(distance('cm'))
+			print(distance())
 			
 		GPIO.cleanup()
 
