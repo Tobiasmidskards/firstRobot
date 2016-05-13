@@ -82,7 +82,6 @@ def distance(measure='cm'):
 		
 		distance = tl / 0.000058
 				
-		print distance
 		return distance
 		
 		
@@ -101,6 +100,8 @@ def main():
 		GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 		
 		distance()
+		
+		print distance
 		
 		if distance() < 15:
 			forwardoff()
