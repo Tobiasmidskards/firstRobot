@@ -100,7 +100,7 @@ def main():
 		distance()
 		led()
 		
-		if distance < 15.0:
+		if distance() < 15:
 			led()
 			back()
 			rints(0,2)
