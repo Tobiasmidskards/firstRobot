@@ -78,6 +78,7 @@ while True:
 	GPIO.setup(15, GPIO.OUT)
 	
 	char = getch() 
+	led()
 	if(char == "w"): 
 		forward() 
 	if(char == "a"): 
