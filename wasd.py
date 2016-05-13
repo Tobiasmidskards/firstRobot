@@ -83,7 +83,7 @@ print("'K' Will stop the drive motors")
 
 x=True
 
-while x = True: 
+while x == True: 
 	char = getch() 
 	if(char == "w"): 
 		forward() 
