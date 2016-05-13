@@ -30,7 +30,7 @@ def left():
 	print "Turning left"
 	GPIO.output(7,True)
 	GPIO.output(15,True)
-	time.sleep(1)
+	time.sleep(.8)
 	GPIO.output(7,False)
 	GPIO.output(15,False)
 
@@ -39,7 +39,7 @@ def right():
 	print "Turning right"
 	GPIO.output(13,True)
 	GPIO.output(11,True)
-	time.sleep(1)
+	time.sleep(.8)
 	GPIO.output(13,False)
 	GPIO.output(11,False)
 
@@ -48,7 +48,7 @@ def back():
 	print "Going backwards"
 	GPIO.output(7,True)
 	GPIO.output(13,True)
-	time.sleep(2)
+	time.sleep(1)
 	GPIO.output(7,False)
 	GPIO.output(13,False)
 
@@ -103,7 +103,7 @@ def main():
 		
 		print distance()
 		
-		if distance() < 15:
+		if distance() < 20:
 			forwardoff()
 			led()
 			back()
