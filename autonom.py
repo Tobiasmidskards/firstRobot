@@ -79,7 +79,6 @@ def distance(measure='cm'):
 		
 		distance = tl / 0.000058
 				
-		GPIO.cleanup()
 		
 		return distance
 		
