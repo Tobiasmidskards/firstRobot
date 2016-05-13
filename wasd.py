@@ -81,7 +81,9 @@ print("Use WASD to drive")
 time.sleep(.5) 
 print("'K' Will stop the drive motors") 
 
-while True: 
+x=True
+
+while x = True: 
 	char = getch() 
 	if(char == "w"): 
 		forward() 
