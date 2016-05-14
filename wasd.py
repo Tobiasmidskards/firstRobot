@@ -49,8 +49,6 @@ def back():
 
 def ledon():
 	print "on"
-	GPIO.output(18,False)
-	GPIO.output(40,False)
 	GPIO.output(18,True)
 	GPIO.output(40,True)
 	
