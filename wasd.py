@@ -105,9 +105,9 @@ def on():
 		stahp() 
 	if(char == "b"): 
 		led()
-	f(char == "o"): 
+	if(char == "o"): 
 		ledon()
-	f(char == "p"): 
+	if(char == "p"): 
 		ledoff()
 	time.sleep(.02) 
 
