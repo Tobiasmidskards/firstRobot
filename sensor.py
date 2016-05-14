@@ -11,6 +11,9 @@ def distance(measure='cm'):
 		GPIO.setup(16, GPIO.IN)
 		GPIO.setup(18, GPIO.OUT)
 		GPIO.setup(7, GPIO.OUT)
+		GPIO.setup(40, GPIO.OUT)
+
+		
 		
 		time.sleep(0.3)
 		GPIO.output(12,True)
@@ -39,9 +42,15 @@ def distance(measure='cm'):
 			time.sleep(0.1)
 			GPIO.output(18,False)
 			GPIO.output(7,False)
+			
+		
+			GPIO.output(40,True)
+		
 		else:
 			GPIO.output(18,False)
 			GPIO.output(7,False)
+
+			GPIO.output(40,False)
 				
 		GPIO.cleanup()
 		
