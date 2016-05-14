@@ -5,7 +5,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(18, GPIO.OUT)
 
 GPIO.output(18,True)
-time.sleep(1)
+time.sleep(5)
 GPIO.output(18,False)
 
 GPIO.cleanup()
