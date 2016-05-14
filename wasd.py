@@ -11,6 +11,7 @@ GPIO.setup(11, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT) 
 GPIO.setup(15, GPIO.OUT)
 GPIO.setup(18, GPIO.OUT)
+GPIO.setup(40, GPIO.OUT)
 
 def forward():
 	# Go forward
@@ -47,14 +48,23 @@ def back():
 	GPIO.output(7,True)
 	GPIO.output(13,True)
 
+def ledon():
+	GPIO.output(18,True)
+	GPIO.output(40,True)
+	
+def ledonoff():
+	GPIO.output(18,False)
+	GPIO.output(40,False)
 
 def led():
 	# Led blink
 	print "Led blink 3 times"
 	for b in range (0,3):
 		GPIO.output(18,True)
+		GPIO.output(40,True)
 		time.sleep(0.25)
 		GPIO.output(18,False)
+		GPIO.output(40,False)
 		time.sleep(0.25)
 def getch(): 
 	fd = sys.stdin.fileno() 
@@ -93,6 +103,10 @@ def on():
 		stahp() 
 	if(char == "b"): 
 		led()
+	f(char == "o"): 
+		ledon()
+	f(char == "p"): 
+		ledoff()
 	time.sleep(.02) 
 
 
