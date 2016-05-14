@@ -4,6 +4,7 @@ import time
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(18, GPIO.OUT)
 GPIO.setup(7, GPIO.OUT)
+GPIO.setup(40, GPIO.OUT)
 
 def distance(measure='cm'):
 		GPIO.setmode(GPIO.BOARD)
