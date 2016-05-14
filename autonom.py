@@ -3,7 +3,8 @@ import time
 from random import randint as rints
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(18, GPIO.OUT) # LED
+GPIO.setup(18, GPIO.OUT) # LED WHITE
+GPIO.setup(40, GPIO.OUT) # LED RED
 
 GPIO.setup(7, GPIO.OUT)  # MOTOR 1-7
 GPIO.setup(11,GPIO.OUT)  # MOTOR 2-11
@@ -57,8 +58,10 @@ def led():
 	print "Led blink 3 times"
 	for b in range (0,3):
 		GPIO.output(18,True)
+		GPIO.output(40,True)
 		time.sleep(0.5)
 		GPIO.output(18,False)
+		GPIO.output(40,False)
 		time.sleep(0.5)
 	
 	# Led on permanently
@@ -89,7 +92,8 @@ def distance(measure='cm'):
 def main():
 	# autonom main function
 		GPIO.setmode(GPIO.BOARD)
-		GPIO.setup(18, GPIO.OUT) # LED
+		GPIO.setup(18, GPIO.OUT) # LED WHITE
+		GPIO.setup(40, GPIO.OUT) # LED RED
 
 		GPIO.setup(7, GPIO.OUT)  # MOTOR 1-7
 		GPIO.setup(11,GPIO.OUT)  # MOTOR 2-11
