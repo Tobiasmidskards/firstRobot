@@ -47,25 +47,6 @@ def back():
 	GPIO.output(7,True)
 	GPIO.output(13,True)
 
-def ledon():
-	print "on"
-	GPIO.output(18,True)
-	GPIO.output(40,True)
-	
-def ledonoff():
-	GPIO.output(18,False)
-	GPIO.output(40,False)
-
-def led():
-	# Led blink
-	print "Led blink 3 times"
-	for b in range (0,3):
-		GPIO.output(18,True)
-
-		time.sleep(0.25)
-		GPIO.output(18,False)
-
-		time.sleep(0.25)
 def getch(): 
 	fd = sys.stdin.fileno() 
 	old_settings = termios.tcgetattr(fd) 
