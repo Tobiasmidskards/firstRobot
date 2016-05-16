@@ -64,7 +64,7 @@ print("'K' Will stop the drive motors")
 
 
 while True: 
-	GPIO.setmode(GPIO.BOARD) 
+		GPIO.setmode(GPIO.BOARD) 
 		GPIO.setup(7, GPIO.OUT) 
 		GPIO.setup(11, GPIO.OUT) 
 		GPIO.setup(13, GPIO.OUT) 
@@ -83,7 +83,7 @@ while True:
 			right() 
 		if(char == "k"): 
 			stahp() 
-	time.sleep(.02) 
+		time.sleep(.02) 
 
 
 print "cleanup"
