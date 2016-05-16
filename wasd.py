@@ -63,28 +63,27 @@ time.sleep(.5)
 print("'K' Will stop the drive motors") 
 
 def on():
-	while True: 
-		GPIO.setmode(GPIO.BOARD) 
-		GPIO.setup(7, GPIO.OUT) 
-		GPIO.setup(11, GPIO.OUT) 
-		GPIO.setup(13, GPIO.OUT) 
-		GPIO.setup(15, GPIO.OUT)
-		GPIO.setup(18, GPIO.OUT)
+while True: 
+GPIO.setmode(GPIO.BOARD) 
+	GPIO.setup(7, GPIO.OUT) 
+	GPIO.setup(11, GPIO.OUT) 
+	GPIO.setup(13, GPIO.OUT) 
+	GPIO.setup(15, GPIO.OUT)
+	GPIO.setup(18, GPIO.OUT)
 
 	
-		char = getch() 
-		if(char == "w"): 
-			forward() 
-		if(char == "a"): 
-			left() 
-		if(char == "s"): 
-			back() 
-		if(char == "d"): 
-			right() 
-		if(char == "k"): 
-			stahp() 
-
-		time.sleep(.02) 
+	char = getch() 
+	if(char == "w"): 
+		forward() 
+	if(char == "a"): 
+		left() 
+	if(char == "s"): 
+		back() 
+	if(char == "d"): 
+		right() 
+	if(char == "k"): 
+		stahp() 
+	time.sleep(.02) 
 
 
 print "cleanup"
