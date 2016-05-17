@@ -14,18 +14,18 @@ GPIO.setup(15,GPIO.OUT)  # MOTOR 4-15
 GPIO.setup(12,GPIO.OUT)  # DISTANCE TRIGGER
 GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 
-print "1 - Fremad"
-print "2 - Bagud"
-print "3 - Højre"
-print "4 - Venstre"
-print "5 - Lys"
+print ("1 - Fremad")
+print ("2 - Bagud")
+print ("3 - Højre")
+print ("4 - Venstre")
+print ("5 - Lys")
 
 Hvad = input ("Hvad vil du teste?: ")
 
 tid = input ("Hvor lang tid vil du teste?: ")
  
 def stop():
-	print "Stopper test"
+	print ("Stopper test")
 	GPIO.output(7,False)
 	GPIO.output(11,False)
 	GPIO.output(13,False)
@@ -34,35 +34,35 @@ def stop():
 	GPIO.output(40,False)
 
 def forward():
-	print "Kører fremad"
+	print ("Kører fremad")
 	GPIO.output(7,True)
 	GPIO.output(13,True)
 	time.sleep(tid)
 	stop()
 
 def backward():
-	print "Kører baglæns"
+	print ("Kører baglæns")
 	GPIO.output(11,True)
 	GPIO.output(15,True)
 	time.sleep(tid)
 	stop()
 
 def left():
-	print "Drejer til venstre"
+	print ("Drejer til venstre")
 	GPIO.output(7,True)
 	GPIO.output(15,True)
 	time.sleep(tid)
 	stop()
 
 def right():
-	print "Drejer til højre"
+	print ("Drejer til højre")
 	GPIO.output(11,True)
 	GPIO.output(13,True)
 	time.sleep(tid)
 	stop()
 
 def light():
-	print "Tænder lys"
+	print ("Tænder lys")
 	GPIO.output(18,True)
 	GPIO.output(40,True)
 	time.sleep(tid)
@@ -79,7 +79,7 @@ def main():
 		left()
 	elif hvad == "5":
 		light()
-	else
-	print "Skriv det ordenligt."
+	else:
+        print ("Skriv det ordenligt.")
 
 
