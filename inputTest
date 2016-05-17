@@ -1,0 +1,6 @@
+import RPi.GPIO as GPIO
+import time
+from random import randint as rints
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.OUT
