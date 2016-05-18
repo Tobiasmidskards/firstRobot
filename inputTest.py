@@ -23,7 +23,7 @@ print ("5 - Lys")
 tid = 5
 
 def clear():
-	print "\n * 50"
+	print ('\n' * 50)
 
 def count():
 	print "1"
