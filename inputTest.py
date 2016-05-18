@@ -80,6 +80,6 @@ def main():
 	elif hvad == "5":
 		light()
 	else:
-        print ("Skriv det ordenligt.")
+        	print ("Skriv det ordenligt.")
 
 
