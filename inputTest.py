@@ -21,7 +21,10 @@ print ("4 - Venstre")
 print ("5 - Lys")
 
 tid = 5
- 
+
+def clear():
+	print "\n * 50"
+
 def count():
 	print "1"
 	time.sleep(1)
@@ -82,7 +85,7 @@ def main():
 	print "main"
 	hvad = input ('Hvad vil du teste?: ')
 	 
-	print (hvad)
+	clear()
 	if hvad == 1:
 		forward()
 	elif hvad == 2:
