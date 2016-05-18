@@ -16,7 +16,7 @@ GPIO.setup(16, GPIO.IN)  # DISTANCE ECHO
 
 print ("1 - Fremad")
 print ("2 - Bagud")
-print ("3 - Højre")
+print ("3 - Hojre")
 print ("4 - Venstre")
 print ("5 - Lys")
 
@@ -34,14 +34,14 @@ def stop():
 	GPIO.output(40,False)
 
 def forward():
-	print ("Kører fremad")
+	print ("Korer fremad")
 	GPIO.output(7,True)
 	GPIO.output(13,True)
 	time.sleep(tid)
 	stop()
 
 def backward():
-	print ("Kører baglæns")
+	print ("Korer baglaens")
 	GPIO.output(11,True)
 	GPIO.output(15,True)
 	time.sleep(tid)
@@ -55,14 +55,14 @@ def left():
 	stop()
 
 def right():
-	print ("Drejer til højre")
+	print ("Drejer til hojre")
 	GPIO.output(11,True)
 	GPIO.output(13,True)
 	time.sleep(tid)
 	stop()
 
 def light():
-	print ("Tænder lys")
+	print ("Taender lys")
 	GPIO.output(18,True)
 	GPIO.output(40,True)
 	time.sleep(tid)
