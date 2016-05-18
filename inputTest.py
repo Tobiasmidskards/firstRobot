@@ -20,7 +20,7 @@ print ("3 - Hojre")
 print ("4 - Venstre")
 print ("5 - Lys")
 
-
+tid = 5
  
 def stop():
 	print ("Stopper test")
@@ -68,7 +68,7 @@ def light():
 
 def main():
 	Hvad = input ("Hvad vil du teste?: ")
-	tid = 5
+
 	if hvad == "1":
 		forward
 	elif hvad == "2":
@@ -82,4 +82,5 @@ def main():
 	else:
         	print ("Skriv det ordenligt.")
 
+main()
 
