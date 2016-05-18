@@ -73,13 +73,13 @@ def main():
 	print (hvad)
 	if hvad == 1:
 		forward()
-	elif hvad == "2":
+	elif hvad == 2:
 		backward()
-	elif hvad == "3":
+	elif hvad == 3:
 		right()
-	elif hvad == "4":
+	elif hvad == 4:
 		left()
-	elif hvad == "5":
+	elif hvad == 5:
 		light()
 	else:
         	print ("Skriv det ordenligt.")
