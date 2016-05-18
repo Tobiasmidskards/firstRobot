@@ -68,7 +68,8 @@ def light():
 
 def main():
 	print "main"
-	Hvad = input ('Hvad vil du teste?: ')
+	hvad = input ('Hvad vil du teste?: ')
+	 
 	print (hvad)
 	if hvad == "1":
 		forward
