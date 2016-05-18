@@ -20,9 +20,7 @@ print ("3 - Hojre")
 print ("4 - Venstre")
 print ("5 - Lys")
 
-Hvad = input ("Hvad vil du teste?: ")
 
-tid = 5
  
 def stop():
 	print ("Stopper test")
@@ -69,6 +67,8 @@ def light():
 	stop()
 
 def main():
+	Hvad = input ("Hvad vil du teste?: ")
+	tid = 5
 	if hvad == "1":
 		forward
 	elif hvad == "2":
