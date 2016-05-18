@@ -27,15 +27,15 @@ def clear():
 	print ('\n' * 50)
 
 def count():
-	print "1"
+	print "1 ud af 5 sekunder"
 	time.sleep(1)
-	print "2"
+	print "2 ud af 5 sekunder"
 	time.sleep(1)
-	print "3"
+	print "3 ud af 5 sekunder"
 	time.sleep(1)
-	print "4"
+	print "4 ud af 5 sekunder"
 	time.sleep(1)
-	print "5"
+	print "5 ud af 5 sekunder"
 	time.sleep(1)
 	
 def stop():
