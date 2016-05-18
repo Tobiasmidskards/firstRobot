@@ -23,9 +23,6 @@ print ("5 - Lys")
 
 tid = 5
 
-def clear():
-	print ('\n' * 50)
-
 def count():
 	print "1 ud af 5 sekunder"
 	time.sleep(1)
@@ -72,7 +69,7 @@ def right():
 	print ("Drejer til hojre")
 	GPIO.output(11,True)
 	GPIO.output(13,True)
-	time.sleep(tid)
+	count()
 	stop()
 
 def light():
@@ -85,8 +82,6 @@ def light():
 def main():
 	stop()
 	hvad = input ('Hvad vil du teste?: ')
-	 
-	clear()
 	if hvad == 1:
 		forward()
 	elif hvad == 2:
