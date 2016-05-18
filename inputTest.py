@@ -67,8 +67,9 @@ def light():
 	stop()
 
 def main():
+	print "main"
 	Hvad = input ("Hvad vil du teste?: ")
-
+	
 	if hvad == "1":
 		forward
 	elif hvad == "2":
