@@ -22,7 +22,7 @@ print ("5 - Lys")
 
 Hvad = input ("Hvad vil du teste?: ")
 
-tid = input ("Hvor lang tid vil du teste?: ")
+tid = int(input ("Hvor lang tid vil du teste?: "))
  
 def stop():
 	print ("Stopper test")
