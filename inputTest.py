@@ -22,6 +22,18 @@ print ("5 - Lys")
 
 tid = 5
  
+def count():
+	print "1"
+	time.sleep(1)
+	print "2"
+	time.sleep(1)
+	print "3"
+	time.sleep(1)
+	print "4"
+	time.sleep(1)
+	print "5"
+	time.sleep(1)
+	
 def stop():
 	print ("Stopper test")
 	GPIO.output(7,False)
@@ -35,21 +47,21 @@ def forward():
 	print ("Korer fremad")
 	GPIO.output(7,True)
 	GPIO.output(13,True)
-	time.sleep(tid)
+	count()
 	stop()
 
 def backward():
 	print ("Korer baglaens")
 	GPIO.output(11,True)
 	GPIO.output(15,True)
-	time.sleep(tid)
+	count()
 	stop()
 
 def left():
 	print ("Drejer til venstre")
 	GPIO.output(7,True)
 	GPIO.output(15,True)
-	time.sleep(tid)
+	count()
 	stop()
 
 def right():
@@ -63,7 +75,7 @@ def light():
 	print ("Taender lys")
 	GPIO.output(18,True)
 	GPIO.output(40,True)
-	time.sleep(tid)
+	count()
 	stop()
 
 def main():
