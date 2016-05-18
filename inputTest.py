@@ -83,5 +83,5 @@ def main():
 	else:
         	print ("Skriv det ordenligt.")
 
-
+main
 
