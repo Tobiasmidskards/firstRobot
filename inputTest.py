@@ -82,7 +82,7 @@ def light():
 	stop()
 
 def main():
-	print "main"
+	stop()
 	hvad = input ('Hvad vil du teste?: ')
 	 
 	clear()
