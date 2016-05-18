@@ -1,6 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 from random import randint as rints
+GPIO.setwarnings(False)
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(18, GPIO.OUT) # LED WHITE
