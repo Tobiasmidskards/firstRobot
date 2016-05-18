@@ -72,15 +72,15 @@ def main():
 	 
 	print (hvad)
 	if hvad == "1":
-		forward
+		forward()
 	elif hvad == "2":
-		backward
+		backward()
 	elif hvad == "3":
-		right
+		right()
 	elif hvad == "4":
-		left
+		left()
 	elif hvad == "5":
-		light
+		light()
 	else:
         	print ("Skriv det ordenligt.")
 
