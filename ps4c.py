@@ -133,7 +133,7 @@ while done==False:
     # Limit to 20 frames per second
     clock.tick(20)
 
-def hej:
+def hej():
     print "hej123"
   
 # Close the window and quit.
