@@ -110,7 +110,7 @@ while done==False:
         
         
         
-        print (joystick.get_axis( 0 ).format(i,axis))
+        print (textString(joystick.get_axis( 0 ).format(i,axis)))
         
         if joystick.get_button(1) == True:
             x()
