@@ -115,7 +115,7 @@ while done==False:
         if joystick.get_button(1) == True:
             x()
         
-        if joystick.get_button(2) == True:
+        if joystick.get_button(0) == True:
             sq()
         
         def x():
