@@ -106,12 +106,10 @@ while done==False:
             button = joystick.get_button( i )
             textPrint.print1(screen, "Button {:>2} value: {}".format(i,button) )
             if joystick.get_button(i) == True:
-              hej()
+                print "hej123"
         
         textPrint.unindent()
-        
-        def hej():
-            print "hej123"
+
             
         # Hat switch. All or nothing for direction, not like joysticks.
         # Value comes back in an array.
