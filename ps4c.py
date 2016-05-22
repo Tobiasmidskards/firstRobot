@@ -106,7 +106,7 @@ while done==False:
             button = joystick.get_button( i )
             textPrint.print1(screen, "Button {:>2} value: {}".format(i,button) )
             if joystick.get_button(i) == True:
- +              print "hej"
+                print "hej"
         
         textPrint.unindent()
 
