@@ -105,8 +105,7 @@ while done==False:
         for i in range( buttons ):
             button = joystick.get_button( i )
             textPrint.print1(screen, "Button {:>2} value: {}".format(i,button) )
-            if joystick.get_button(i) == True:
-              print "hej"
+            
         
         textPrint.unindent()
             
@@ -133,9 +132,9 @@ while done==False:
     # Limit to 20 frames per second
     clock.tick(20)
 
-for i in range( hats ):
-            hat = joystick.get_hat( i )
-            textPrint.print1(screen, "Hat {} value: {}".format(i, str(hat)) )    
+if joystick.get_button(i) == True:
+              print "hej"
+  
 # Close the window and quit.
 # If you forget this line, the program will 'hang'
 # on exit if running from IDLE.
