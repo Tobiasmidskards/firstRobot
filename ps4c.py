@@ -110,8 +110,7 @@ while done==False:
         
         
         
-        if joystick.get_axis(1) == 1:
-            x()
+        print (joystick.get_button( 0 ))
         
         if joystick.get_button(1) == True:
             x()
