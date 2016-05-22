@@ -5,7 +5,7 @@ pygame.init()
 done = False
 
 
-while done == False 
+while done == False:
 
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT: # If user clicked close
