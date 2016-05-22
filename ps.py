@@ -11,6 +11,7 @@ done = False
 
 
 while done == False:
+	GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(40, GPIO.OUT) # LED RED
 	
 	for event in pygame.event.get():
