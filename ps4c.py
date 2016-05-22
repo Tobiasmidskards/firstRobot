@@ -110,7 +110,7 @@ while done==False:
         
         
         
-        print (joystick.get_button( 0 ))
+        print (joystick.get_button( 0 ).format(i,button))
         
         if joystick.get_button(1) == True:
             x()
