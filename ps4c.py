@@ -108,6 +108,8 @@ while done==False:
             if joystick.get_button(i) == True:
                 lol()
         
+        def lol():
+            print "he1"
         textPrint.unindent()
 
             
@@ -134,8 +136,7 @@ while done==False:
     # Limit to 20 frames per second
     clock.tick(20)
 
-def lol():
-    print "he1"
+
   
 # Close the window and quit.
 # If you forget this line, the program will 'hang'
