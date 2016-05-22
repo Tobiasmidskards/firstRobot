@@ -43,7 +43,19 @@ while done == False:
 
 
 		#tester
+		#(-1, 0) means left; 
+		#(1, 0) means right; 
+		#(0, 1) means up; 
+		#(1, 1) means upper-right; etc.
+        	
+        	
         	if joystick.get_hat(0) == (0,1):
-            		print "Jeg virker"
+            		print "op"
+            	elif joystick.get_hat(0) == (0,-1):
+            		print "ned"
+            	elif joystick.get_hat(0) == (-1,0):
+            		print "left"
+            	else joystick.get_hat(0) == (1,0):
+            		print "right"
 
 pygame.quit()
