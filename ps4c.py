@@ -114,21 +114,9 @@ while done==False:
         #if joystick.get_axis(1) > 0:
           #  print "bumse"
             
-        if joystick.get_axis(2) > 0:
-            print "bumse"
+    
         
         
-        if joystick.get_button(1) == True:
-            x()
-        
-        if joystick.get_button(0) == True:
-            sq()
-        
-        def x():
-            print "x"
-        
-        def sq():
-            print "sq"
         
         
         
@@ -147,7 +135,20 @@ while done==False:
         textPrint.print1(screen, "Number of hats: {}".format(hats) )
         textPrint.indent()
 
-    
+        if joystick.get_numhats(0) == True:
+            x()
+        
+        if joystick.get_button(1) == True:
+            x()
+        
+        if joystick.get_button(0) == True:
+            sq()
+        
+        def x():
+            print "x"
+        
+        def sq():
+            print "sq"
         
         
             
