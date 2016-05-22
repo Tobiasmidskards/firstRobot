@@ -9,13 +9,13 @@ while done == False:
 
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT: # If user clicked close
-            done=True # Flag that we are done so we exit this loop
+        	done=True # Flag that we are done so we exit this loop
         
         # Possible joystick actions: JOYAXISMOTION JOYBALLMOTION JOYBUTTONDOWN JOYBUTTONUP JOYHATMOTION
         if event.type == pygame.JOYBUTTONDOWN:
-            print("Joystick button pressed.")
+        	print("Joystick button pressed.")
         if event.type == pygame.JOYBUTTONUP:
-            print("Joystick button released.")
+        	print("Joystick button released.")
 
 
 
