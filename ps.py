@@ -57,5 +57,14 @@ while done == False:
             		print "left"
             	elif joystick.get_hat(0) == (1,0):
             		print "right"
+		
+		elif joystick.get_button(1) == True:
+            		print "kryds"
+        
+       		elif joystick.get_button(0) == True:
+            		print "firkant"
+        
+    
 
+		
 pygame.quit()
