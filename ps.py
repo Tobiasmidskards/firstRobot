@@ -29,20 +29,21 @@ while done == False:
 		name = joystick.get_name()
 
 		axes = joystick.get_numaxes()
+		axes = joystick.get_numaxes()
 
 		for i in range( axes ):
 			axis = joystick.get_axis(1)
 
 		buttons = joystick.get_numbuttons()
 
-        for i in range( buttons ):
-            button = joystick.get_button( i )
+        	for i in range( buttons ):
+            		button = joystick.get_button( i )
 
-        hats = joystick.get_numhats()
+        		hats = joystick.get_numhats()
 
 
-        #tester
-        if joystick.get_hat(0) == (0,1):
-            x()
+		#tester
+        	if joystick.get_hat(0) == (0,1):
+            		x()
 
 pygame.quit()
