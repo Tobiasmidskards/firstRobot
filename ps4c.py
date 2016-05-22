@@ -116,9 +116,7 @@ while done==False:
         textPrint.print1(screen, "Number of hats: {}".format(hats) )
         textPrint.indent()
 
-        for i in range( hats ):
-            hat = joystick.get_hat( i )
-            textPrint.print1(screen, "Hat {} value: {}".format(i, str(hat)) )
+    
         
         
             
@@ -134,7 +132,10 @@ while done==False:
 
     # Limit to 20 frames per second
     clock.tick(20)
-    
+
+for i in range( hats ):
+            hat = joystick.get_hat( i )
+            textPrint.print1(screen, "Hat {} value: {}".format(i, str(hat)) )    
 # Close the window and quit.
 # If you forget this line, the program will 'hang'
 # on exit if running from IDLE.
