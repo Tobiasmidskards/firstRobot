@@ -1,4 +1,9 @@
 import pygame
+import RPi.GPIO as GPIO
+import time
+from random import randint as rints
+
+
 
 pygame.init()
 
@@ -6,7 +11,8 @@ done = False
 
 
 while done == False:
-
+	GPIO.setup(40, GPIO.OUT) # LED RED
+	
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT: # If user clicked close
         		done=True # Flag that we are done so we exit this loop
@@ -51,8 +57,10 @@ while done == False:
         	
         	if joystick.get_hat(0) == (0,1):
             		print "op"
+            		GPIO.output(40,True)
             	elif joystick.get_hat(0) == (0,-1):
             		print "ned"
+            		GPIO.output(40,False)
             	elif joystick.get_hat(0) == (-1,0):
             		print "left"
             	elif joystick.get_hat(0) == (1,0):
@@ -63,7 +71,7 @@ while done == False:
         
        		elif joystick.get_button(0) == True:
             		print "firkant"
-        
+        GPIO.cleanup()
     
 
 		
