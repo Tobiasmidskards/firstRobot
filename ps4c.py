@@ -108,7 +108,7 @@ while done==False:
         
         
         
-        if joystick.get_axis(0) == 0:
+        if joystick.get_axis(0) > 0:
             print "numse"
         
         
