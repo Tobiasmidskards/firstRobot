@@ -110,6 +110,9 @@ while done==False:
         
         if joystick.get_axis(0) > 0:
             print "numse"
+            
+        if joystick.get_axis(1) > 0:
+            print "bumse"
         
         
         if joystick.get_button(1) == True:
