@@ -26,8 +26,8 @@ while done == False:
 	for i in range(joystick_count):
 		joystick = pygame.joystick.Joystick(i)
 
-		name = joystick.get_name()
-		axes = joystick.get_numaxes()
+		name = Joystick.get_name()
+		axes = Joystick.get_numaxes()
 
 		for i in range( axes ):
 			axis = joystick.get_axis(i)
