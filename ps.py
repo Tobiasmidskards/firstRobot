@@ -30,7 +30,7 @@ while done == False:
 
 		axes = joystick.get_numaxes()
 
-		for i in range axes:
+		for i in range( axes ):
 			axis = joystick.get_axis(1)
 
 		buttons = joystick.get_numbuttons()
