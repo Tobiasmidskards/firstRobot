@@ -105,7 +105,7 @@ while done==False:
         for i in range( buttons ):
             button = joystick.get_button( i )
             textPrint.print1(screen, "Button {:>2} value: {}".format(i,button) )
-            if joystick.get_button(i) == True:
+            if joystick.get_button(1) == True:
                 lol()
         
         def lol():
