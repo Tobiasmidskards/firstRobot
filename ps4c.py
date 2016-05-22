@@ -106,8 +106,30 @@ while done==False:
             button = joystick.get_button( i )
             textPrint.print1(screen, "Button {:>2} value: {}".format(i,button) )
         
+        
+        
+        
+        
+        
+        
         if joystick.get_button(1) == True:
-            lol()
+            x()
+        
+        if joystick.get_button(2) == True:
+            sq()
+        
+        def x():
+            print "x"
+        
+        def sq():
+            print "sq"
+        
+        
+        
+        
+        
+        
+        
         
         
         textPrint.unindent()
@@ -136,8 +158,7 @@ while done==False:
     # Limit to 20 frames per second
     clock.tick(20)
 
-def lol():
-    print "he1"
+
 
   
 # Close the window and quit.
