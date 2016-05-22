@@ -109,6 +109,9 @@ while done==False:
               hej()
         
         textPrint.unindent()
+        
+        def hej():
+            print "hej123"
             
         # Hat switch. All or nothing for direction, not like joysticks.
         # Value comes back in an array.
@@ -133,8 +136,7 @@ while done==False:
     # Limit to 20 frames per second
     clock.tick(20)
 
-def hej():
-    print "hej123"
+
   
 # Close the window and quit.
 # If you forget this line, the program will 'hang'
