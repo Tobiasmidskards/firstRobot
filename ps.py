@@ -21,7 +21,7 @@ while done == False:
 
 	pygame.joystick.init()
 
-	joystick.count = pygame.joystick.get_count()
+	joystick_count = pygame.joystick.get_count()
 
 	for i in range(joystick.count):
 		joystick = pygame.joystick.joystick(i)
