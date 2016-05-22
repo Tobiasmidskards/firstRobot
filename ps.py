@@ -55,7 +55,7 @@ while done == False:
             		print "ned"
             	elif joystick.get_hat(0) == (-1,0):
             		print "left"
-            	else joystick.get_hat(0) == (1,0):
+            	elif joystick.get_hat(0) == (1,0):
             		print "right"
 
 pygame.quit()
