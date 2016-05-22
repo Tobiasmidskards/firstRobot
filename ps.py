@@ -3,8 +3,6 @@ import RPi.GPIO as GPIO
 import time
 from random import randint as rints
 
-
-
 pygame.init()
 
 done = False
@@ -59,19 +57,34 @@ while done == False:
         	if joystick.get_hat(0) == (0,1):
             		print "op"
             		GPIO.output(40,True)
+            		
             	elif joystick.get_hat(0) == (0,-1):
             		print "ned"
             		GPIO.output(40,False)
+            		
             	elif joystick.get_hat(0) == (-1,0):
             		print "left"
+            		
             	elif joystick.get_hat(0) == (1,0):
             		print "right"
 		
-		elif joystick.get_button(1) == True:
-            		print "kryds"
+	
         
        		elif joystick.get_button(0) == True:
             		print "firkant"
+            		
+            	elif joystick.get_button(1) == True:
+            		print "kryds"
+            		
+            	elif joystick.get_button(2) == True:
+            		print "rund"
+        
+       		elif joystick.get_button(3) == True:
+            		print "trekant"
+            		GPIO.cleanup()
+            		pygame.quit()
+            		
+            		
         GPIO.cleanup()
     
 
