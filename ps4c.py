@@ -108,9 +108,9 @@ while done==False:
         
         
         
+        if joystick.get_axis(0) == 0:
+            print "numse"
         
-        
-        print (str(joystick.get_axis( 0 ).format(i,axis)))
         
         if joystick.get_button(1) == True:
             x()
