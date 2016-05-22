@@ -135,7 +135,7 @@ while done==False:
         textPrint.print1(screen, "Number of hats: {}".format(hats) )
         textPrint.indent()
 
-        if joystick.get_hat(0) == (1,1):
+        if joystick.get_hat(0) == (0,1):
             x()
         
         if joystick.get_button(1) == True:
