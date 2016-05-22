@@ -82,7 +82,7 @@ while done == False:
        		elif joystick.get_button(3) == True:
             		print "trekant"
             		GPIO.cleanup()
-            		pygame.quit()
+            		done=True
             		
             		
         GPIO.cleanup()
