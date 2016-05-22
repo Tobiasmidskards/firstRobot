@@ -44,6 +44,6 @@ while done == False:
 
 		#tester
         	if joystick.get_hat(0) == (0,1):
-            		x()
+            		print "Jeg virker"
 
 pygame.quit()
