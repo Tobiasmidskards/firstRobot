@@ -2,7 +2,7 @@ import pygame
 import RPi.GPIO as GPIO
 import time
 from random import randint as rints
-from file import function
+from sensor import distance
 
 pygame.init()
 
@@ -84,7 +84,9 @@ while done == False:
             		print "trekant"
             		GPIO.cleanup()
             		done=True
-            		
+            	
+            	distance()
+            	GPIO.cleanup
             		
         GPIO.cleanup()
     
