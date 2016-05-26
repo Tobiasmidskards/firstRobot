@@ -86,6 +86,7 @@ while done == False:
             		done=True
             	
             	distance()
+            	print(distance('cm'))
             	GPIO.cleanup
             		
         GPIO.cleanup()
