@@ -2,6 +2,7 @@ import pygame
 import RPi.GPIO as GPIO
 import time
 from random import randint as rints
+from file import function
 
 pygame.init()
 
