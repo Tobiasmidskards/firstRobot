@@ -49,7 +49,8 @@ while done == False:
         	for i in range( buttons ):
         		button = joystick.get_button( i )
        			hats = joystick.get_numhats()
-			
+		GPIO.cleanup
+		
        	if joystick.get_axis(1) < 0.0:
             			print (str(joystick.get_axis(1)))
             			print "jeg er ON"
@@ -66,7 +67,7 @@ while done == False:
             		
        	#distance()
        	#print(distance('cm'))
-       		GPIO.cleanup
+       		
             		
     	GPIO.cleanup()
     
