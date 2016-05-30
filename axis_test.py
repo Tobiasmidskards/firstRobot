@@ -51,7 +51,7 @@ while done == False:
 	
 	smone = False
 	
-	while smone == False:
+	if smone == False:
 		p = GPIO.PWM (40,100)
 		p.start(0)
 		p.ChangeFrequency(100)
