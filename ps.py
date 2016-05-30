@@ -85,9 +85,13 @@ while done == False:
             		GPIO.cleanup()
             		done=True
             		
-            	elif joystick.get_axis(1) < 100.0:
+            	elif joystick.get_axis(1) < 0.0:
             		print (str(joystick.get_axis(1)))
             		print "jeg er ON"
+            	
+            	elif joystick.get_axis(1) > 0.0:
+            		print (str(joystick.get_axis(1)))
+            		print "jeg er OFF"
             		
             	#distance()
             	#print(distance('cm'))
