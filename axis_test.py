@@ -43,13 +43,15 @@ while done == False:
 		buttons = joystick.get_numbuttons()
 
 
-		p = GPIO.PWM (40,100)
-		p.start(0)
-		p.ChangeFrequency(100)
+		
         	for i in range( buttons ):
         		button = joystick.get_button( i )
        			hats = joystick.get_numhats()
 		GPIO.cleanup
+	
+	p = GPIO.PWM (40,100)
+	p.start(0)
+	p.ChangeFrequency(100)
 		
        	if joystick.get_axis(1) > 0.5:
             			print (str(joystick.get_axis(1)))
