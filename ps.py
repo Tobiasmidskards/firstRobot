@@ -2,7 +2,7 @@ import pygame
 import RPi.GPIO as GPIO
 import time
 from random import randint as rints
-from sensor import distance
+#from sensor import distance
 
 pygame.init()
 
@@ -89,8 +89,8 @@ while done == False:
             		print (str(joystick.get_axis(1)))
             		print "jeg er ON"
             		
-            	distance()
-            	print(distance('cm'))
+            	#distance()
+            	#print(distance('cm'))
             	GPIO.cleanup
             		
         GPIO.cleanup()
