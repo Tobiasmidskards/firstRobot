@@ -50,7 +50,7 @@ while done == False:
         		button = joystick.get_button( i )
        			hats = joystick.get_numhats()
 			
-       			if joystick.get_axis(1) < 0.0 & joystick.get_axis(1) < -0.5:
+       			if joystick.get_axis(1) < -5.0:
             			print (str(joystick.get_axis(1)))
             			print "jeg er ON"
             			p.ChangeDutyCycle(100)
