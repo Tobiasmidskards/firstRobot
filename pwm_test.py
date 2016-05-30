@@ -8,12 +8,12 @@ GPIO.setup(40, GPIO.OUT)
 p = GPIO.PWM(40, 30)
 
 print "starting motor"
-p.start(30)
+p.start(50)
 
 time.sleep(5)
 
 print "p.ChangeDutyCycle(90)"
-p.ChangeDutyCycle(50)
+p.ChangeDutyCycle(20)
 
 time.sleep(5)
 
