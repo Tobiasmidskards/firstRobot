@@ -50,17 +50,17 @@ while done == False:
         		button = joystick.get_button( i )
        			hats = joystick.get_numhats()
 			
-       			while joystick.get_axis(1) < 0.0:
+       		while joystick.get_axis(1) < 0.0:
             			print (str(joystick.get_axis(1)))
             			print "jeg er ON"
             			p.ChangeDutyCycle(100)
             	
-       			while joystick.get_axis(1) > 0.0:
+       		while joystick.get_axis(1) > 0.0:
             			print (str(joystick.get_axis(1)))
             			print "jeg er OFF"
             			p.ChangeDutyCycle(50)
             		
-            		while joystick.get_axis(1) == 0.0:
+            	while joystick.get_axis(1) == 0.0:
             			p.ChangeDutyCycle(0)
             		
             		
