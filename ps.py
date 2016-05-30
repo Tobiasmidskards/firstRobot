@@ -84,7 +84,11 @@ while done == False:
             		print "trekant"
             		GPIO.cleanup()
             		done=True
-            	
+            		
+            	elif joystick.get_axis(1) < 1
+            		print (str(joystick.get_axis(1)))
+            		print "jeg er ON"
+            		
             	distance()
             	print(distance('cm'))
             	GPIO.cleanup
