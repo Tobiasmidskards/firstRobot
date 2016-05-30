@@ -60,7 +60,7 @@ while done == False:
             			print "jeg er OFF"
             			p.ChangeDutyCycle(50)
             		
-            		elif joystick.get_axis(1) == 0:
+            		else:
             			p.ChangeDutyCycle(0)
             		
             		
