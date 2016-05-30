@@ -56,9 +56,9 @@ while done == False:
             		
        	#distance()
        	#print(distance('cm'))
-       	GPIO.cleanup
+       		GPIO.cleanup
             		
-    GPIO.cleanup()
+    	GPIO.cleanup()
     
 
 		
