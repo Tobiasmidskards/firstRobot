@@ -5,15 +5,15 @@ GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(40, GPIO.OUT)
 
-p = GPIO.PWM(40, 50)
+p = GPIO.PWM(40, 10)
 
 print "starting motor"
-p.start(50)
+p.start(10)
 
 time.sleep(5)
 
 print "p.ChangeDutyCycle(90)"
-p.ChangeDutyCycle(90)
+p.ChangeDutyCycle(50)
 
 time.sleep(5)
 
