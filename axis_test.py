@@ -49,21 +49,24 @@ while done == False:
        			hats = joystick.get_numhats()
 		GPIO.cleanup
 	
-	p = GPIO.PWM (40,100)
-	p.start(0)
-	p.ChangeFrequency(100)
+	smone = False
+	
+	while smone == False:
+		p = GPIO.PWM (40,100)
+		p.start(0)
+		p.ChangeFrequency(100)
 		
-       	if joystick.get_axis(1) > 0.5:
+       		if joystick.get_axis(1) > 0.5:
             			print (str(joystick.get_axis(1)))
             			print "jeg er ON"
             			p.ChangeDutyCycle(100)
             	
-       	elif joystick.get_axis(1) > 0.0:
+       		elif joystick.get_axis(1) > 0.0:
             			print (str(joystick.get_axis(1)))
             			print "jeg er OFF"
             			p.ChangeDutyCycle(50)
             		
-        else:
+        	else:
             			p.ChangeDutyCycle(0)
             		
             		
