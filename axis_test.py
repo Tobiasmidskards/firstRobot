@@ -42,17 +42,27 @@ while done == False:
 
 		buttons = joystick.get_numbuttons()
 
+
+		p = GPIO.PWM (40,30)
+		p.start(0)
+		p.ChangeFrequency(100)
         	for i in range( buttons ):
         		button = joystick.get_button( i )
        			hats = joystick.get_numhats()
-
+			
        			if joystick.get_axis(1) < 0.0:
             			print (str(joystick.get_axis(1)))
             			print "jeg er ON"
+            			p.ChangeDutyCycle(100)
             	
        			elif joystick.get_axis(1) > 0.0:
             			print (str(joystick.get_axis(1)))
             			print "jeg er OFF"
+            			p.ChangeDutyCycle(50)
+            		
+            		elif joystick.get_axis(1) == 0:
+            			p.ChangeDutyCycle(0)
+            		
             		
        	#distance()
        	#print(distance('cm'))
