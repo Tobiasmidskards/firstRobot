@@ -42,17 +42,17 @@ while done == False:
 
 		buttons = joystick.get_numbuttons()
 
-        for i in range( buttons ):
-        	button = joystick.get_button( i )
-       		hats = joystick.get_numhats()
+        	for i in range( buttons ):
+        		button = joystick.get_button( i )
+       			hats = joystick.get_numhats()
 
-       	if joystick.get_axis(1) < 0.0:
-            		print (str(joystick.get_axis(1)))
-            		print "jeg er ON"
+       			if joystick.get_axis(1) < 0.0:
+            			print (str(joystick.get_axis(1)))
+            			print "jeg er ON"
             	
-       	elif joystick.get_axis(1) > 0.0:
-            		print (str(joystick.get_axis(1)))
-            		print "jeg er OFF"
+       			elif joystick.get_axis(1) > 0.0:
+            			print (str(joystick.get_axis(1)))
+            			print "jeg er OFF"
             		
        	#distance()
        	#print(distance('cm'))
