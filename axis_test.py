@@ -43,7 +43,7 @@ while done == False:
 		buttons = joystick.get_numbuttons()
 
 
-		p = GPIO.PWM (40,0)
+		p = GPIO.PWM (40,100)
 		p.start(0)
 		p.ChangeFrequency(100)
         	for i in range( buttons ):
