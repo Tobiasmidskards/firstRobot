@@ -88,7 +88,6 @@ while done == False:
             	elif joystick.get_axis(1) < 0.0:
             		print (str(joystick.get_axis(1)))
             		print "jeg er ON"
-            		forward()
             	
             	elif joystick.get_axis(1) > 0.0:
             		print (str(joystick.get_axis(1)))
