@@ -1,7 +1,6 @@
 import pygame
 import RPi.GPIO as GPIO
 import time
-from wasd import *
 from random import randint as rints
 #from sensor import distance
 
