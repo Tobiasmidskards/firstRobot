@@ -8,21 +8,21 @@ pygame.init()
 
 done = False
 
-def forward():
+def left():
 	# Go forward
 	print "Going forward"
 	GPIO.output(11,True)
 	GPIO.output(15,True)
 	
 
-def right():
+def back():
 	# Turn left
 	print "Turning left"
 	GPIO.output(7,True)
 	GPIO.output(15,True)
 	
 
-def left():
+def forward():
 	# Turn right
 	print "Turning right"
 	GPIO.output(13,True)
@@ -37,7 +37,7 @@ def stahp():
 	GPIO.output(15,False)
 	GPIO.output(7,False)
 
-def back():
+def right():
 	# Go backwards
 	print "Going backwards"
 	GPIO.output(7,True)
