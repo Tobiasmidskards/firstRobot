@@ -75,6 +75,7 @@ while True:
 		char = getch() 
 		if(char == "w"): 
 			forward() 
+			stahp()
 		if(char == "a"): 
 			left() 
 		if(char == "s"): 
