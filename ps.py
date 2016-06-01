@@ -95,21 +95,21 @@ while done == False:
 		#(1, 1) means upper-right; etc.
         	
         	
-        	if joystick.get_hat(0) == (0,1):
+        	while joystick.get_hat(0) == (0,1):
             		print "op"
             		forward()
             		GPIO.output(40,True)
             		
-            	elif joystick.get_hat(0) == (0,-1):
+            	while joystick.get_hat(0) == (0,-1):
             		print "ned"
             		stahp()
             		GPIO.output(40,False)
             		
-            	elif joystick.get_hat(0) == (-1,0):
+            	while joystick.get_hat(0) == (-1,0):
             		print "left"
             		left()
             		
-            	elif joystick.get_hat(0) == (1,0):
+            	while joystick.get_hat(0) == (1,0):
             		print "right"
             		right()
 		
