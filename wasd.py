@@ -81,7 +81,8 @@ while True:
 			back() 
 		if(char == "d"): 
 			right() 
-		else:
+		else:	
+			time.sleep(1)
 			stahp() 
 		time.sleep(.02) 
 
