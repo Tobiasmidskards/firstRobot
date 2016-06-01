@@ -115,7 +115,7 @@ while done == False:
 		
 	
         
-       		elif joystick.get_button(0) == True:
+       		if joystick.get_button(0) == True:
             		print "firkant"
             		
             	elif joystick.get_button(1) == True:
