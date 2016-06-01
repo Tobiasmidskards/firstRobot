@@ -8,10 +8,50 @@ pygame.init()
 
 done = False
 
+def forward():
+	# Go forward
+	print "Going forward"
+	GPIO.output(11,True)
+	GPIO.output(15,True)
+	
+
+def right():
+	# Turn left
+	print "Turning left"
+	GPIO.output(7,True)
+	GPIO.output(15,True)
+	
+
+def left():
+	# Turn right
+	print "Turning right"
+	GPIO.output(13,True)
+	GPIO.output(11,True)
+
+
+def stahp():
+	# Stop
+	print "Stopping all motors"
+	GPIO.output(13,False)
+	GPIO.output(11,False)
+	GPIO.output(15,False)
+	GPIO.output(7,False)
+
+def back():
+	# Go backwards
+	print "Going backwards"
+	GPIO.output(7,True)
+	GPIO.output(13,True)
+
 
 while done == False:
 	GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(40, GPIO.OUT) # LED RED
+	GPIO.setmode(GPIO.BOARD)
+	GPIO.setup(7,GPIO.OUT)
+	GPIO.setup(11,GPIO.OUT)
+	GPIO.setup(13,GPIO.OUT)
+	GPIO.setup(15,GPIO.OUT)
 	
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT: # If user clicked close
@@ -57,17 +97,21 @@ while done == False:
         	
         	if joystick.get_hat(0) == (0,1):
             		print "op"
+            		forward()
             		GPIO.output(40,True)
             		
             	elif joystick.get_hat(0) == (0,-1):
             		print "ned"
+            		stahp()
             		GPIO.output(40,False)
             		
             	elif joystick.get_hat(0) == (-1,0):
             		print "left"
+            		left()
             		
             	elif joystick.get_hat(0) == (1,0):
             		print "right"
+            		right()
 		
 	
         
